@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Unique Homes | You Dream, We Build.</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- RESET CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CUSTOM FONTS FROM GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- CUSTOM JS -->
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <!-- <header> -->
+    <nav id="navbar">
+      <img
+        id="navbar__logo"
+        src="./assets/img/housing-logo.png"
+        alt="metflix-logo"
+        height="auto"
+        width="70px"
+      />
+      <div id="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+      <ul id="navbar__links">
+        <li class="navbar__link"><a href="#heroImage">Home</a></li>
+        <li class="navbar__link">
+          <a href="#mostPopular__parent">Houses</a>
+        </li>
+        <li class="navbar__link">
+          <a href="#categories__parent">Features</a>
+        </li>
+        <li class="navbar__link"><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="heroImage">
+      <h2>Build your <span>Dream Home</span> with us.</h2>
+      <p>
+        We buy and sell exotic range of houses, from an affordable condominium
+        to a luxurious mansion, we've got it all covered!<br />
+        <button>Get a Quote!</button>
+      </p>
+    </section>
+    <!-- </header> -->
+    <main id="mainContent">
+      <section id="mostPopular__parent">
+        <h1 class="headings"><span>Most</span> Popular</h1>
+        <div id="mostPopular__divs">
+          <div class="mostPopular__div">
+            <h2>Mansion</h2>
+            <p>
+              The word itself derives through Old French from the Latin word
+              'mansio' meaning "dwelling"...
+            </p>
+          </div>
+          <div class="mostPopular__div">
+            <h2>Condominium</h2>
+            <p>
+              A condominium, or condo, is an individually owned residential unit
+              in a complex or building of like units....
+            </p>
+          </div>
+          <div class="mostPopular__div">
+            <h2>Townhouse</h2>
+            <p>
+              A townhouse, townhome, town house, or town home, is a type of
+              terraced housing...
+            </p>
+          </div>
+          <div class="mostPopular__div">
+            <h2>Farmhouse</h2>
+            <p>
+              A farmhouse is a building that serves as the primary quarters in a
+              rural or agricultural setting....
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="categories__parent">
+        <h1 class="headings">Categories</h1>
+        <div id="categories__divs">
+          <div class="categories__div">
+            <h2>Solar Powered</h2>
+            <p>
+              Lower electric bills, lower carbon footprints, and potentially
+              higher home values!
+            </p>
+          </div>
+          <div class="categories__div">
+            <h2>Smart Home</h2>
+            <p>Control your house at your fingertips!</p>
+          </div>
+          <div class="categories__div">
+            <h2>Vintage</h2>
+            <p>
+              That old nostalgic feeling cannot be replaced with modern designs!
+            </p>
+          </div>
+          <div class="categories__div">
+            <h2>Glass House</h2>
+            <p>
+              Naturally lit, hence low hydro bill along with a luxurious feel!
+            </p>
+          </div>
+          <div class="categories__div">
+            <h2>Fully Furnished</h2>
+            <p>Who likes to have a new house and old furniture anyway!</p>
+          </div>
+          <div class="categories__div">
+            <h2>High Homes</h2>
+            <p>For that captivating and soothing view!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <section id="footer__siteInfoParent">
+        <div id="footer__siteInfo">
+          <img
+            id="footer__logo"
+            src="./assets/img/housing-logo.png"
+            alt="uniquehomes-logo"
+          />
+          <p>
+            <a id="siteName" href="#">uniquehomes.com</a>
+          </p>
+          <p>Support: <a id="siteEmail" href="#">support@uniquehomes.com</a></p>
+          <address id="footer__address">
+            200, Mountain View,<br />San Francisco, California, United States.
+          </address>
+        </div>
+        <div id="footer__miscInfo">
+          <a href="#heroImage" id="backToTop">Back to top</a>
+          <p>&copy; 2010 - 2022 | <span>Unique Homes</span>, Inc.</p>
+        </div>
+      </section>
+      <section id="footer__formParent">
+        <form method="POST" action="/">
+          <fieldset id="footer__form">
+            <legend align="center" id="formHeading">
+              Contact <span>us</span>
+            </legend>
+            <div id="nameEmailInp">
+              <div>
+                <label for="name"
+                  >Your Name<sup> * </sup
+                  ><span id="nameError" class="errorMsg"
+                    >Please fill out this field!</span
+                  ></label
+                >
+                <input
+                  id="name"
+                  class="inputs"
+                  type="text"
+                  placeholder="Justin Trudeau"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email"
+                  >Your Email<sup> * </sup
+                  ><span id="mailError" class="errorMsg"
+                    >Please fill out this field!</span
+                  ></label
+                >
+                <input
+                  id="email"
+                  class="inputs"
+                  type="email"
+                  placeholder="justin@xyz.com"
+                  required
+                />
+              </div>
+            </div>
+            <div id="textSubmitInp">
+              <label for="textarea"
+                >Your Message<sup> * </sup
+                ><span id="msgError" class="errorMsg"
+                  >Please fill out this field!</span
+                ></label
+              >
+              <textarea
+                id="textarea"
+                class="inputs"
+                cols="30"
+                rows="5"
+                placeholder="Your message goes here..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" id="formSubmitBtn">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </footer>
+  </body>
+</html>
